@@ -1,0 +1,36 @@
+{
+  "name": "Strix - Camera Stream Discovery",
+  "version": "1.0.0",
+  "slug": "strix",
+  "description": "Smart IP camera stream discovery system with ONVIF support and comprehensive camera database (3,600+ models)",
+  "url": "https://github.com/eduard256/Strix",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armv7"
+  ],
+  "init": false,
+  "startup": "application",
+  "boot": "auto",
+  "ports": {
+    "4567/tcp": 4567
+  },
+  "ports_description": {
+    "4567/tcp": "Web interface and API"
+  },
+  "ingress": true,
+  "ingress_port": 4567,
+  "panel_icon": "mdi:cctv",
+  "map": [
+    "share:rw"
+  ],
+  "options": {
+    "log_level": "info",
+    "port": 4567
+  },
+  "schema": {
+    "log_level": "list(debug|info|warn|error)?",
+    "port": "port?"
+  },
+  "image": "ghcr.io/eduard256/hassio-strix-{arch}"
+}
