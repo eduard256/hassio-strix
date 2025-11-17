@@ -38,7 +38,7 @@ COPY --from=builder /build/strix /app/strix
 COPY --from=builder /build/data /app/data
 
 # Copy web UI
-COPY --from=builder /build/web /app/web
+COPY --from=builder /build/webui /app/webui
 
 # Copy entrypoint script
 COPY rootfs/docker-entrypoint.sh /docker-entrypoint.sh
