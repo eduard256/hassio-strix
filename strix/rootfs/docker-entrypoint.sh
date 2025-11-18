@@ -25,7 +25,7 @@ export STRIX_LOG_FORMAT="json"
 
 # Print startup info
 echo "Starting Strix Camera Stream Discovery System"
-echo "Version: 1.0.0"
+echo "Version: 1.0.3"
 echo "Port: $PORT"
 echo "Log Level: $LOG_LEVEL"
 

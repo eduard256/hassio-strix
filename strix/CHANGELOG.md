@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-11-18
+
+### Fixed
+- Fix stream discovery API URL for Home Assistant Ingress compatibility
+- Remove URL() constructor that broke Ingress path resolution
+
+## [1.0.2] - 2025-11-18
+
+### Fixed
+- Fix camera search and other API paths for Home Assistant Ingress
+- Change absolute paths to relative paths in API requests
+
 ## [1.0.1] - 2025-01-18
 
 ### Fixed
