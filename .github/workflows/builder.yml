@@ -8,14 +8,11 @@ on:
 
 jobs:
   build:
-    name: Build ${{ matrix.arch }}
+    name: Build and Push
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
-    strategy:
-      matrix:
-        arch: [aarch64, amd64, armv7]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,8 +28,7 @@ jobs:
         uses: home-assistant/builder@master
         with:
           args: |
-            --${{ matrix.arch }} \
+            --all \
             --target strix \
             --docker-hub ghcr.io/${{ github.repository_owner }} \
-            --no-latest \
             --addon
