@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2025-11-22
+
+### Fixed
+- SSE timeout issues during long-running stream discovery
+- Increased server WriteTimeout from 30s to 5 minutes for SSE support
+- Progress updates now sent every second to prevent connection timeouts
+
+### Improved
+- More reliable stream discovery progress tracking
+- Better handling of cameras with many stream URLs to test
+
 ## [1.0.4] - 2025-11-22
 
 ### Added
