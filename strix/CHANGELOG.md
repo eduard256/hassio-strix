@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2025-11-22
+
+### Added
+- Dynamic channel support for HiWatch/Hikvision cameras
+- New URL patterns with [CHANNEL] placeholder for flexible channel selection
+- Support for multi-channel DVR/NVR systems
+
+### Improved
+- HiWatch camera database now supports channels 0-255
+- Better stream discovery for multi-camera setups
+- Users can now specify exact channel number for testing
+
 ## [1.0.5] - 2025-11-22
 
 ### Fixed
