@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2025-11-23
+
+### Fixed
+- Fixed channel numbering for Hikvision-style cameras (reported by @sergbond_com)
+- Removed invalid test data from Hikvision camera database
+- Fixed brand+model search matching in stream discovery
+
+### Added
+- Universal `[CHANNEL+1]` placeholder support for flexible channel numbering
+- Support for both 0-based (channel=0 → 101) and 1-based (channel=1 → 101) channel selection
+- Added 6 high-priority Hikvision patterns to popular stream patterns database
+
+### Changed
+- Updated 14 camera brands with universal channel patterns (Hikvision, Hiwatch, Annke, Swann, Abus, 7links, LevelOne, AlienDVR, Oswoo, AV102IP-40, Acvil, TBKVision, Deltaco, Night Owl)
+- Hikvision: replaced 10 hardcoded patterns with 6 universal patterns
+- Hiwatch: replaced 4 hardcoded patterns with 8 universal patterns (including ISAPI variants)
+- Universal patterns now tested first for faster discovery, hardcoded patterns kept as fallback
+- Improved stream discovery performance with intelligent pattern ordering
+
 ## [1.0.6] - 2025-11-22
 
 ### Added
