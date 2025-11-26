@@ -1,6 +1,6 @@
 {
-  "name": "Strix - Camera Stream Discovery",
-  "version": "1.0.7",
+  "name": "Strix",
+  "version": "1.0.8",
   "slug": "strix",
   "description": "Smart IP camera stream discovery system with ONVIF support and comprehensive camera database (3,600+ models)",
   "url": "https://github.com/eduard256/Strix",

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2025-11-26
+
+### Changed
+- Updated Docker deployment to use host network mode for better compatibility
+- Simplified add-on name to "Strix"
+
+### Improved
+- Better compatibility with unprivileged LXC containers
+- Simplified Docker networking configuration
+- Direct network access for improved camera discovery performance
+
 ## [1.0.7] - 2025-11-23
 
 ### Fixed
