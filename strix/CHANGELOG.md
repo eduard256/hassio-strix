@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9] - 2025-12-11
+
+### Fixed
+- Fixed real-time SSE streaming in Home Assistant Ingress mode
+- SSE events now arrive immediately instead of being buffered until completion
+
+### Technical
+- Added automatic detection of Home Assistant Ingress via X-Ingress-Path header
+- Implemented 64KB padding for SSE events to overcome aiohttp buffer in HA Supervisor
+- Adjusted progress update interval to 3 seconds in Ingress mode to reduce traffic
+- Normal mode (Docker/direct access) remains unchanged
+
 ## [1.0.8] - 2025-11-26
 
 ### Changed
