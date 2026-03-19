@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2026-03-19
+
+### Added
+- Project icon assets (SVG, 192x192 PNG, 512x512 PNG) for use in app stores and integrations
+
+### Fixed
+- Health endpoint now accepts HEAD requests for Docker and CasaOS healthcheck compatibility
+- Registered HEAD route in chi router for /api/v1/health endpoint
+
 ## [1.0.10] - 2026-03-17
 
 ### Added
