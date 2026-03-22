@@ -10,6 +10,7 @@
   "init": false,
   "startup": "application",
   "boot": "auto",
+  "host_network": true,
   "ports": {
     "4567/tcp": 4567
   },
