@@ -11,12 +11,7 @@
   "init": false,
   "startup": "application",
   "boot": "auto",
-  "ports": {
-    "4567/tcp": 4567
-  },
-  "ports_description": {
-    "4567/tcp": "Web interface and API"
-  },
+  "host_network": true,
   "ingress": true,
   "ingress_port": 4567,
   "panel_icon": "mdi:cctv",
