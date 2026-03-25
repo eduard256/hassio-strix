@@ -10,6 +10,7 @@
   "init": false,
   "startup": "application",
   "boot": "auto",
+  "hassio_api": true,
   "host_network": true,
   "ingress": true,
   "ingress_port": 4567,
