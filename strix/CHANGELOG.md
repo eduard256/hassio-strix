@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2026-04-08
+
+### Added
+- ONVIF protocol support: auto-discovery via unicast WS-Discovery, stream resolution through ONVIF profiles
+- ONVIF probe detector: detects ONVIF cameras during network probe (4-7ms response time, no auth required)
+- ONVIF camera page: credentials form with option to also test popular stream patterns
+- ONVIF stream handler: resolves all camera profiles, tests each via RTSP, returns paired results (onvif:// + rtsp://) with shared screenshots
+
+### Changed
+- ONVIF has highest probe priority (above HomeKit and Standard)
+- JPEG-only streams classified as Alternative in test results
+- HomeKit page redesigned with centered layout
+- Hardened URL handling against undefined/null values
+
 ## [2.0.0] - 2025-04-05
 
 ### Added
